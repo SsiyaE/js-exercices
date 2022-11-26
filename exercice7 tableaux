@@ -1,0 +1,37 @@
+//exercice 7 des tableaux
+function occurrence(tab)
+{
+    let taille=1;
+    let cpt=0;
+    let tab2=[tab[0]];
+    let cab=[1];
+    for(let i=1;i<tab.length;i++)
+    {
+        for (let k=0; k<taille; k++)
+        {
+            if (tab[i]==tab2[k])
+            {
+                cpt++;
+                cab[k]++;
+            }
+        }
+        if (cpt==0)
+        {
+            taille=tab2.push(tab[i]);
+            taille=cab.push(1);
+        }
+    }
+    let max=cab[0];
+    let indice=0;
+    for(let n=0; n<taille; n++)
+    {
+        if(max<cab[n])
+        {
+            max=cab[n];
+            indice=n;
+        }
+    }
+    console.log(tab2[indice]+" ("+max+" fois)");
+}
+let tab=[3, 'a', 'a', 'b', 2, 3, 'a', 3, 'a', 2, 'c', 9, 3] ;
+occurrence(tab)
