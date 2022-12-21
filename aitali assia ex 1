@@ -1,0 +1,12 @@
+let p = document.getElementById('parag1');
+let d1 = document.getElementById ("changeStyle"); 
+   d1.addEventListener('click', function () {
+    p.style.color="white";
+    p.style.backgroundColor="black";
+    });
+let d2 = document.getElementById ("resetStyle"); 
+    d2.addEventListener('click',function()
+    {
+        p.style.color="black";
+        p.style.background='white';
+    });
