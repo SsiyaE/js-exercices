@@ -8,3 +8,4 @@ Solutions des exercices JavaScript traités au cours.
 [Examen Blanc](./exams/exam1/qsts/README.md)
 
 [Examen](./exams/exam2/qsts/README.md)
+
